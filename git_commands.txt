@@ -1,0 +1,59 @@
+mkdir codebase
+cd codebase
+git status
+
+#Fatal error: not a git repo
+
+git init
+get-childitem -force
+git status
+
+
+git confi-global user.name learnerg -
+git config --global user.email learner@ow.com
+git config --global --list
+
+-----------------------
+Lab2
+
+notepad test
+
+# do you want to create new file
+
+This is first file
+
+#Press ctrl+s to save the file
+
+git status
+
+#Untracked file
+git add test
+git status
+git log
+
+git commit -m "adding first file"
+git log
+#from git log command orange color note down the commit id
+
+git show previous-commitid
+
+
+
+cat .git/config
+
+-------------
+git branch
+git branch test     ----> creating a branch test
+git branch
+git checkout test   ----> changing to test branch
+git branch
+notepad learner
+#save file
+git add .
+git commit -m "adding to branch"
+git push origin test      ----> pushing new branch test to GitHub repository
+###
+
+git checkout main
+git merge test       ----> merging the changes of test branch to main branch
+git push origin main
